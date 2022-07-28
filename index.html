@@ -19,10 +19,10 @@
 
     <header class="container">
         <!-- Navbar Section start  -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg sticky-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="images/logo.svg" alt="" height="80" width="250">
+                    <img src="images/logo.svg" alt="" height="50" width="220">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -47,14 +47,15 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-outline-primary">Register</button>
+                    <a class="btn btn-outline-primary" href="form.html">Register</a>
+                    <!-- <button type="button" class="btn btn-outline-primary">Register</button> -->
                 </div>
             </div>
         </nav>
         <!-- Navbar Section end -->
 
         <!-- slider start  -->
-        <section class="mb-5 py-3">
+        <section class="mb-5 py-2">
             <div class="">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-indicators">
@@ -112,7 +113,7 @@
     </header>
 
     <!-- Courses start  -->
-    <section class="container py-5 mb-3">
+    <section class="container py-5 mb-3" id="courses">
 
         <h2 class="text-center">Discover Our Popular Courses</h2>
         <p class="text-center">Online Courses from the Best Professionals, Share your Projects and find a job. <br>
@@ -239,55 +240,27 @@
     </section>
     <!-- Courses end -->
 
-    <!-- Register/modal part start -->
-    <section class="container py-5">
-        <div class="bg-info rounded">
-            <div class="d-flex justify-content-around py-5">
-                <div class="text-white">
-                    <h2>Ready to join?</h2>
-                    <p>Are you mentally prepared? Then definitely join our world...</p>
-                </div>
-                <div>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn bg-white text-primary mt-5" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">
-                        Register Now
-                    </button>
-
-                    <!-- Modal start -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel"> You can expand your knowledge base.
-                                    </h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>If you want to be a tech hero then register now...</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <a class="btn btn-primary" href="form.html">Let's Sign Up</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- modal end  -->
-
-                </div>
+    <!-- Register & modal part start -->
+    <section class="container bg-info rounded py-5 shadow-lg" id="deals">
+        <div class="d-flex justify-content-around py-3">
+            <div class="text-white">
+                <h2>Ready to join?</h2>
+                <p>Are you mentally prepared? Then definitely join our world...</p>
             </div>
 
+            <div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn bg-white text-primary py-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Register Now
+                </button>
+            </div>
         </div>
     </section>
     <!-- Register/modal part end -->
 
     <!-- Question part start  -->
-    <section class="container my-5">
+    <section class="container my-5" id="question">
         <h2 class="text-center">Frequently Asked Questions</h2>
         <p class="text-center">Let us begin with the basic CSS interview questions!</p>
 
@@ -383,7 +356,7 @@
     </div>
 
     <!-- footer section start -->
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-dark text-center text-white" id="about">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <h1>TeachHero</h1>
@@ -423,6 +396,28 @@
         <!-- Copyright -->
     </footer>
     <!-- footer section end -->
+
+
+    <!-- Modal start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> You can expand your knowledge base.
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>If you want to be a tech hero then register now...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary" href="form.html">Let's Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end  -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
